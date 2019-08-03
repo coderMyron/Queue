@@ -12,7 +12,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        var queue = Queue<Int>()
+        queue.enqueue(1)
+        queue.enqueue(2)
+        queue.enqueue(3)
+        queue.enqueue(4)
+        
+        print(queue)
+        
+        if let num = queue.dequeue() {
+            print("dequeue:\(num)")
+        }
+        
+        print(queue)
+        
+        if let num = queue.dequeue() {
+            print("dequeue:\(num)")
+        }
+        
+        print(queue)
     }
 
 
